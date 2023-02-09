@@ -18,6 +18,12 @@ class Playlist
     def review()
     end
 
+    def add_song()
+    end
+
+    def remove_song()
+    end
+
 
 end
 
