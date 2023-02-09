@@ -1,24 +1,21 @@
 class Playlist 
     attr_accessor :name, :description, :songs
 
-    def initialize()
+    def initialize(name, description, songs)
         puts "Creating playlist #{self}..."
+
+        @name = name
+        @songs = songs
+        @description = description
     end
 
 
 end
 
-drill = Playlist.new()
-drill.name = "Drill"
-drill.description = "man-a-driller"
-drill.songs = []
+drill = Playlist.new("Drill", "man-a-driller", [])
 
-indie = Playlist.new()
-indie.name = "Indie-folk"
-indie.description = "I am an indie"
-indie.songs = []
+indie = Playlist.new("Indie-folk", "I am an indie", [])
 
-afro = Playlist.new()
-afro.name = "Afro-beats"
-afro.description = "Enjoying the african sun"
-afro.songs = []
+afro = Playlist.new("Afro-beats", "Enjoying the african sun", [])
+
+puts drill.description
