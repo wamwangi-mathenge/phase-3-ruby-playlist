@@ -1,3 +1,10 @@
 class Media
-    attr accessor :name, :artist, :album, :duration
+    attr_accessor :name, :artist, :duration, :description
+end
+
+class Song < Media
+    attr_accessor :album
+end
+
+class Podcast < Media
 end

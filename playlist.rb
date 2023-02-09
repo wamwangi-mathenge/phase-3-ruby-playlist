@@ -9,6 +9,15 @@ class Playlist
         @description = description
     end
 
+    def play()
+    end
+
+    def shuffle()
+    end
+
+    def review()
+    end
+
 
 end
 
