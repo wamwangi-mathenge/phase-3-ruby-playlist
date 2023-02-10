@@ -12,6 +12,7 @@ class Song < Media
         attributes.each do |key, value|
             # self.class.attr_accessor(key)
             self.send("#{key}=", value)
+        end
     end
 end
 
@@ -21,9 +22,50 @@ class Podcast < Media
     end
 end
 
-collection = []
-
 library = []
+
+catalogue = [
+    {
+        name: "Niggas in Paris",
+        duration: "4:50",
+        genre: "Hip-Hop",
+        album: "Watch the Throne",
+        year: 2011,
+        artist: "Kanye West ft. Jay Z"
+    },
+    {
+        name: "Niggas in Paris",
+        duration: "4:50",
+        genre: "Hip-Hop",
+        album: "Watch the Throne",
+        year: 2011,
+        artist: "Kanye West ft. Jay Z"
+    },
+    {
+        name: "Niggas in Paris",
+        duration: "4:50",
+        genre: "Hip-Hop",
+        album: "Watch the Throne",
+        year: 2011,
+        artist: "Kanye West ft. Jay Z"
+    },
+    {
+        name: "Niggas in Paris",
+        duration: "4:50",
+        genre: "Hip-Hop",
+        album: "Watch the Throne",
+        year: 2011,
+        artist: "Kanye West ft. Jay Z"
+    },
+    {
+        name: "Niggas in Paris",
+        duration: "4:50",
+        genre: "Hip-Hop",
+        album: "Watch the Throne",
+        year: 2011,
+        artist: "Kanye West ft. Jay Z"
+    },
+]
 
 for song in librart do
     # Create song from the Song class
@@ -31,3 +73,5 @@ for song in librart do
     # collection.push(item)
     puts item
 end
+
+puts collection
