@@ -1,3 +1,6 @@
+require_relative "./Media"
+require_relative "./Person"
+
 library = []
 
 catalogue = [
@@ -7,7 +10,10 @@ catalogue = [
         genre: "Hip-Hop",
         album: "Watch the Throne",
         year: 2011,
-        artist: "Kanye West ft. Jay Z"
+        artists: [
+            Artist.new("Kanye West", 45, "USA", "Musical genius"),
+            Artist.new("Jay Z", 53, "USA", "Lyricist")
+        ]
     },
     {
         name: "The Box",
@@ -50,4 +56,4 @@ for item in catalogue do
     puts item
 end
 
-puts collection
+# puts collection
